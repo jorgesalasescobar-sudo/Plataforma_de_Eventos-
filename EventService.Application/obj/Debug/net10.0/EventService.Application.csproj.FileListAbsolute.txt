@@ -1,0 +1,17 @@
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Application.deps.json
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Application.runtimeconfig.json
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Application.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Application.pdb
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Domain.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\bin\Debug\net10.0\EventService.Domain.pdb
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.csproj.AssemblyReference.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.AssemblyInfoInputs.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.AssemblyInfo.cs
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.csproj.CoreCompileInputs.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventSer.38CB6A54.Up2Date
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\refint\EventService.Application.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.pdb
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\EventService.Application.genruntimeconfig.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Application\obj\Debug\net10.0\ref\EventService.Application.dll

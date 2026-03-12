@@ -1,0 +1,14 @@
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\bin\Debug\net10.0\EventService.Domain.deps.json
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\bin\Debug\net10.0\EventService.Domain.runtimeconfig.json
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\bin\Debug\net10.0\EventService.Domain.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\bin\Debug\net10.0\EventService.Domain.pdb
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.csproj.AssemblyReference.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.AssemblyInfoInputs.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.AssemblyInfo.cs
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.csproj.CoreCompileInputs.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\refint\EventService.Domain.dll
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.pdb
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\EventService.Domain.genruntimeconfig.cache
+D:\Desarrollo\EventPlatform\EventPlatform\EventService.Domain\obj\Debug\net10.0\ref\EventService.Domain.dll

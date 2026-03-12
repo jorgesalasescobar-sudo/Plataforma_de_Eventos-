@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Event Platform Architecture" id="0">
+    <mxGraphModel dx="2431" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Web / Mobile Client" vertex="1">
+          <mxGeometry height="60" width="160" x="130" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" value="API Gateway" vertex="1">
+          <mxGeometry height="60" width="160" x="370" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Auth Service" vertex="1">
+          <mxGeometry height="60" width="160" x="570" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="eventsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Event Service" vertex="1">
+          <mxGeometry height="60" width="160" x="600" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="ticketsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ticket Service" vertex="1">
+          <mxGeometry height="60" width="160" x="827" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ordersvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order Service" vertex="1">
+          <mxGeometry height="60" width="160" x="600" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="paymentsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Payment Service" vertex="1">
+          <mxGeometry height="60" width="160" x="600" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Notification Service" vertex="1">
+          <mxGeometry height="60" width="180" x="1270" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="searchsvc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Search Service" vertex="1">
+          <mxGeometry height="60" width="180" x="1110" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="checkin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Check-in Service" vertex="1">
+          <mxGeometry height="60" width="180" x="1221" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rabbit" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;" value="RabbitMQ / SQS" vertex="1">
+          <mxGeometry height="80" width="140" x="847" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="redis" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="Redis Cache" vertex="1">
+          <mxGeometry height="60" width="140" x="837" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="eventdb" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="SQL Server" vertex="1">
+          <mxGeometry height="60" width="140" x="837" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="ticketdb" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="SQL Server" vertex="1">
+          <mxGeometry height="60" width="140" x="837" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="orderdb" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="SQL Server" vertex="1">
+          <mxGeometry height="60" width="140" x="837" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="paymentdb" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="SQL Server" vertex="1">
+          <mxGeometry height="60" width="140" x="837" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="searchdb" parent="1" style="cylinder;whiteSpace=wrap;html=1;" value="MongoDB / Elastic" vertex="1">
+          <mxGeometry height="60" width="180" x="1380" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="client" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="gateway" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="gateway" target="eventsvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="gateway" target="ticketsvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="gateway" target="ordersvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="eventsvc" target="eventdb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="ticketsvc" target="ticketdb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="ordersvc" target="orderdb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="paymentsvc" target="paymentdb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="eventsvc" target="rabbit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="ordersvc" target="rabbit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="paymentsvc" target="rabbit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="rabbit" target="notificationsvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="rabbit" target="searchsvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="searchsvc" target="searchdb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="eventsvc" target="redis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

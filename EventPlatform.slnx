@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+  </Folder>
+  <Project Path="D:/Desarrollo/EventPlatform/EventPlatform/EventService.Api/EventService.Api.csproj" />
+  <Project Path="D:/Desarrollo/EventPlatform/EventPlatform/EventService.Application/EventService.Application.csproj" />
+  <Project Path="D:/Desarrollo/EventPlatform/EventPlatform/EventService.Domain/EventService.Domain.csproj" />
+  <Project Path="D:/Desarrollo/EventPlatform/EventPlatform/EventService.Infrastructure/EventService.Infrastructure.csproj" />
+</Solution>

@@ -1,0 +1,51 @@
+version: '3.9'
+
+services:
+  api-event:
+    build:
+      context: .
+      dockerfile: Dockerfile   # asegúrate que la ruta sea correcta
+    ports:
+      - "5000:80"
+    depends_on:
+      sqlserver:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    restart: always
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=EventPlatformDb;User Id=sa;Password=YourStrong!Passw0rd;TrustServerCertificate=True;"
+      RabbitMq__Host: rabbitmq
+      RabbitMq__Username: guest
+      RabbitMq__Password: guest
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: always
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P YourStrong!Passw0rd -Q 'SELECT 1'"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - "5672:5672"     # puerto de conexión de aplicaciones
+      - "15672:15672"   # consola web de RabbitMQ
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  sql_data: {}
